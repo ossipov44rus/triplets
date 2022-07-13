@@ -8,4 +8,10 @@
         <RootNamespace>ConsoleApp16</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Update="SampleText.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

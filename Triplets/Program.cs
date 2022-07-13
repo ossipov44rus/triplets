@@ -4,14 +4,14 @@ using ConsoleApp16;
 var stopwatch = new Stopwatch();
 stopwatch.Start();
 string? address;
-
+/*
 string fileName = "SampleText.txt";
-address = Path.Combine(Directory.GetCurrentDirectory(), fileName);
-/*do
+address = Path.Combine(Directory.GetCurrentDirectory(), fileName);*/
+do
 {
     Console.WriteLine("Введите адрес файла (в виде не пустой строки):");
     address = Console.ReadLine(); 
-} while (address == string.Empty);*/
+} while (address == string.Empty);
 TripletCounter.Address = address;
 var triplets = TripletCounter.Triplets;
 TripletCounter tripCount = new TripletCounter();
