@@ -18,7 +18,7 @@ record  Words(string[] Sample, ConcurrentDictionary<string, int> MyDict)
                     for (int i = 0; i < counter; i++)
                     {
                         StringBuilder triplet = new StringBuilder();
-                        triplet.Append(word.Substring(i, 3));
+                        triplet.Append(word.ToLower().Substring(i, 3));
                         MyDict.AddOrUpdate(triplet.ToString(), 1, (string s, int i1) => i1 + 1);
                     }
                 }
