@@ -9,9 +9,10 @@ string fileName = "SampleText.txt";
 address = Path.Combine(Directory.GetCurrentDirectory(), fileName);*/
 do
 {
-    Console.WriteLine("Введите адрес файла (в виде не пустой строки):");
+    Console.WriteLine("Введите адрес файла:");
     address = Console.ReadLine(); 
-} while (address == string.Empty);
+    
+} while (!File.Exists(address));
 stopwatch.Start();
 TripletCounter.Address = address;
 var triplets = TripletCounter.Triplets;
